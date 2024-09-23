@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Required",
+        "description": "Essential parameters for running the spatial clustering analysis.",
+        "hidden": false,
+        "parameters": [
+            "exprmats",
+            "metas",
+            "samples",
+            "output"
+        ]
+    },
+    {
+        "name": "Optional",
+        "description": "Optional parameters for customizing the analysis.",
+        "hidden": false,
+        "parameters": [
+            "ws",
+            "dist_metric",
+            "linkage",
+            "ks",
+            "topgenes",
+            "deepSplit",
+            "plot"
+        ]
+    }
+]
