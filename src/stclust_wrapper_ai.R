@@ -10,12 +10,8 @@ library(zip)    # for unzipping zip files
 
 # Define command line options
 option_list <- list(
-  make_option(c("-e", "--exprmats"), type = "character", default = NULL, 
-              help = "Comma-separated list of expression matrix file paths", metavar = "character"),
-  make_option(c("-m", "--metas"), type = "character", default = NULL, 
-              help = "Comma-separated list of metadata file paths", metavar = "character"),
-  make_option(c("-a", "--samples"), type = "character", default = NULL, 
-              help = "Comma-separated list of sample names", metavar = "character"),
+  make_option(c("-e", "--stlist"), type = "character", default = NULL, 
+              help = "STList object in .RDS file format to cluster on.", metavar = "character"),
 
   make_option(c("-w", "--ws"), type="double", default=0.025, 
               help="Weight to be applied to spatial distances (0-1). Default is 0.025", metavar="double"),
@@ -52,16 +48,19 @@ option_list <- list(
 # Parse command line options
 opt <- parse_args(OptionParser(option_list=option_list))
 
-exprmats <- readLines(opt$exprmats)
-metas <- readLines(opt$metas)
-samples <- unlist(strsplit(opt$samples, ","))
+# exprmats <- readLines(opt$exprmats)
+# metas <- readLines(opt$metas)
+# samples <- unlist(strsplit(opt$samples, ","))
 image_zip <- opt$images
 
-# Load data
-lung <- STlist(rnacounts = exprmats, spotcoords = metas, samples = samples)
-lung <- filter_data(lung, spot_minreads=opt$spot_minreads, rm_genes_expr=opt$rm_genes_expr)
-summ_df = summarize_STlist(lung)
-lung <- transform_data(lung, method='sct')
+# Load data OLD
+# lung <- STlist(rnacounts = exprmats, spotcoords = metas, samples = samples)
+# lung <- filter_data(lung, spot_minreads=opt$spot_minreads, rm_genes_expr=opt$rm_genes_expr)
+# summ_df = summarize_STlist(lung)
+# lung <- transform_data(lung, method='sct')
+
+## Read RDS from input
+lung <- readRDS(opt$stlist)
 
 # Filter FOVs if specified
 if (!is.null(opt$keep_fovs)) {
