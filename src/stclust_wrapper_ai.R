@@ -82,7 +82,7 @@ if (!is.null(image_zip)) {
   image_files <- list.files(cell_composite_path, recursive = TRUE, full.names = TRUE)
   
   for (image_file in image_files) {
-    lung_subset <- load_images(lung_subset, images=image_file)
+    lung <- load_images(lung, images=image_file)
   }
 
   # Clean up temporary directory after use
@@ -90,7 +90,7 @@ if (!is.null(image_zip)) {
 }
 
 # Perform clustering using STclust
-lung_subset <- STclust(x=lung_subset, ws=opt$ws, ks=opt$ks)
+lung_subset <- STclust(x=lung, ws=opt$ws, ks=opt$ks)
 ti <- plot_image(lung_subset)
 dom_p <- STplot(lung_subset, ks='dtc', ws=0.02, deepSplit=F, color_pal='discreterainbow')
 

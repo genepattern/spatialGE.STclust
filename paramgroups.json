@@ -6,8 +6,7 @@
         "parameters": [
             "stlist",
             "output",
-            "image.paths",
-            "keep.fov"
+            "image.paths"
         ]
     },
     {
