@@ -62,14 +62,14 @@ image_zip <- opt$images
 ## Read RDS from input
 lung <- readRDS(opt$stlist)
 
-# Filter FOVs if specified
-if (!is.null(opt$keep_fovs)) {
-  keep_fovs <- unlist(strsplit(opt$keep_fovs, ","))
-  rm_fovs = summ_df$sample_name[!(summ_df$sample_name %in% keep_fovs)] 
-  lung_subset <- filter_data(lung, rm_tissue=rm_fovs)
-} else {
-  lung_subset <- lung
-}
+# Filter FOVs if specified this should be done in preprocessing
+# if (!is.null(opt$keep_fovs)) {
+#   keep_fovs <- unlist(strsplit(opt$keep_fovs, ","))
+#   rm_fovs = summ_df$sample_name[!(summ_df$sample_name %in% keep_fovs)] 
+#   lung_subset <- filter_data(lung, rm_tissue=rm_fovs)
+# } else {
+#   lung_subset <- lung
+# }
 
 # Extract images from the zip file and load them
 if (!is.null(image_zip)) {
