@@ -4,10 +4,10 @@
         "description": "Essential parameters for running the spatial clustering analysis.",
         "hidden": false,
         "parameters": [
-            "exprmats",
-            "metas",
-            "samples",
-            "output"
+            "stlist",
+            "output",
+            "image.paths",
+            "keep.fov"
         ]
     },
     {

@@ -102,7 +102,7 @@ if (opt$plot) {
 
 # Save the output STlist object
 print(lung_subset)
-save(lung_subset, file=opt$output)
+saveRDS(lung_subset, file=opt$output)
 
 # Print completion message
 cat("Clustering completed and results saved to", opt$output, "\n")
