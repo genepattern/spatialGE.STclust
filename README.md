@@ -1,4 +1,4 @@
-# Spatial Transcriptomics Clustering Script
+# spatialGE STclust
 =============================================
 
 ## Description
