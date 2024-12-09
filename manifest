@@ -1,4 +1,4 @@
-#spatialGE.STClust
+#spatialGE.STclust
 #Tue Nov 12 23:35:20 UTC 2024
 JVMLevel=
 LSID=urn\:lsid\:genepattern.org\:module.analysis\:00462\:999999999
@@ -14,7 +14,7 @@ job.docker.image=genepattern/spatialgp.preprocessing\:0.4
 job.memory=
 job.walltime=
 language=any
-name=spatialGE.STClust
+name=spatialGE.STclust
 os=any
 p10_MODE=
 p10_TYPE=TEXT
