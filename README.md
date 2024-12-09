@@ -5,7 +5,7 @@
 This script performs clustering analysis on gene expression data using the spatialGE package. It performs the STClust function from SpatialGE. The outputting .RDS object is a STList object for use in downstream Spatial GE analysis / visualization. 
 
 ## Module Details
-- Authors: Edwin Huang
+- Authors: Edwin Huang, Aditya Kakarla
 - Categories: Spatial transcriptomics
 - Source Repo: Link: https://github.com/FridleyLab/spatialGE
 - Contact: Link: https://groups.google.com/u/1/g/genepattern-help
