@@ -27,8 +27,8 @@ option_list <- list(
               help="Logical or integer (1-4) to control cluster resolution. Default is FALSE", metavar="logical"),
   make_option(c("-p", "--plot"), type="logical", default=FALSE, 
               help="Option to plot intermediate results. Default is FALSE", metavar="logical"),
-  make_option(c("-o", "--output"), type="character", default="output.RData", 
-              help="Path to save the output STlist object. Default is 'output.RData'", metavar="character"),
+  make_option(c("-o", "--output"), type="character", default="spatialGE_STclustered.rds", 
+              help="Path to save the output STlist object. Default is 'spatialGE_STclustered.rds'", metavar="character"),
   make_option(c("-f", "--keep_fovs"), type = "character", default = NULL, 
               help = "Comma-separated list of FOVs to keep. If not specified, no filtering is done.", metavar = "character"),
   

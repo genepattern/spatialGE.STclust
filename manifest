@@ -1,10 +1,10 @@
 #spatialGE.STClust
-#Tue Nov 12 23:24:08 UTC 2024
+#Tue Nov 12 23:35:20 UTC 2024
 JVMLevel=
 LSID=urn\:lsid\:genepattern.org\:module.analysis\:00462\:999999999
 author=GenePattern Team + ChatGPT
 categories=clustering
-commandLine=Rscript <libdir>/stclust_wrapper_ai.R -e <stlist> --ws <ws> --dist_metric <dist_metric> --linkage <linkage> --ks <ks> --topgenes <topgenes> --deepSplit <deepSplit> --plot <plot> --output <output>   --image_paths <image.paths>
+commandLine=Rscript <libdir>/stclust_wrapper_ai.R -e <stlist> --ws <ws> --dist_metric <dist_metric> --linkage <linkage> --ks <ks> --topgenes <topgenes> --deepSplit <deepSplit> --plot <plot> --output <output>    <image.paths>
 cpuType=any
 description=This function performs spatial clustering on gene expression data using the STclust method.
 documentationUrl=https\://genepattern.org/modules/spatialGE.STClust.AI
@@ -46,7 +46,7 @@ p1_userSuppliedValuesOK=False
 p1_value=
 p2_MODE=
 p2_TYPE=TEXT
-p2_default_value=output.RData
+p2_default_value=spatialGE_STclustered.rds
 p2_description=Path to save the output STlist object. Default is 'output.RData'.
 p2_fileFormat=
 p2_flag=--output
@@ -63,12 +63,12 @@ p3_TYPE=FILE
 p3_default_value=
 p3_description=Tar gz compressed file of the images of the samples in the STList object.
 p3_fileFormat=
-p3_flag=--image_paths
+p3_flag=--images
 p3_name=image.paths
 p3_numValues=0..1
 p3_optional=on
-p3_prefix=
-p3_prefix_when_specified=
+p3_prefix=--images
+p3_prefix_when_specified=--images
 p3_type=java.io.File
 p3_userSuppliedValuesOK=False
 p3_value=
