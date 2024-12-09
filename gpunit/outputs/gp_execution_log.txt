@@ -1,0 +1,20 @@
+
+# Job: 95854
+# User: edwin5588
+# Submitted: 2024-11-12 23:38:21.0
+# Started Running: 2024-11-12 23:41:19.0
+# Finished Running: 2024-11-12 23:43:43.0
+# Completed: Tue Nov 12 23:44:03 UTC 2024
+# ET(ms): 342733    server:  https://beta.genepattern.org/gp/
+# Module: spatialGE.STClust urn:lsid:genepattern.org:module.analysis:00462:999999999
+# Parameters: 
+#    stlist = test.rds   https://beta.genepattern.org/gp/users/edwin5588/tmp/run7161980193628267276.tmp/stlist/1/test.rds # file size 	27696924
+#    output = spatialGE_STclustered.rds
+#    image.paths = 
+#    ws = 0.025
+#    dist_metric = euclidean
+#    linkage = ward.D2
+#    ks = dtc
+#    topgenes = 2000
+#    deepSplit = FALSE
+#    plot = FALSE

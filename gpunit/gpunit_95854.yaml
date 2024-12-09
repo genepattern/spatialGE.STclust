@@ -1,0 +1,25 @@
+
+name: gpunit_95854
+# description: created from job 95854
+# ET(ms): 343000# from server:  https://beta.genepattern.org/gp/
+module: spatialGE.STClust
+# lsid: urn:lsid:genepattern.org:module.analysis:00462:999999999
+params: 
+    "stlist": "inputs/test.rds"
+    "output": "spatialGE_STclustered.rds"
+    "image.paths": ""
+    "ws": "0.025"
+    "dist_metric": "euclidean"
+    "linkage": "ward.D2"
+    "ks": "dtc"
+    "topgenes": "2000"
+    "deepSplit": "FALSE"
+    "plot": "FALSE"
+
+assertions: 
+    jobStatus: success
+    files: 
+        spatialGE_STclustered.rds: !!null
+        stderr.txt: !!null
+        stdout.txt: !!null
+        gp_execution_log.txt: !!null

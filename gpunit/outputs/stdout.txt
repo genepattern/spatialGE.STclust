@@ -1,0 +1,17 @@
+STclust started.
+STclust completed in 0.12 min.
+Spatial Transcriptomics List (STlist).
+8 spatial array(s):
+	ST_mel1_rep1 (279 ROIs|spots|cells x 15666 genes)
+	ST_mel1_rep2 (293 ROIs|spots|cells x 16148 genes)
+	ST_mel2_rep1 (383 ROIs|spots|cells x 16831 genes)
+	ST_mel2_rep2 (380 ROIs|spots|cells x 16605 genes)
+	ST_mel3_rep1 (256 ROIs|spots|cells x 15653 genes)
+	ST_mel3_rep2 (294 ROIs|spots|cells x 15769 genes)
+	ST_mel4_rep1 (212 ROIs|spots|cells x 14408 genes)
+	ST_mel4_rep2 (248 ROIs|spots|cells x 15991 genes)
+
+9 variables in sample-level data:
+	 patient, slice, gender, BRAF_status, NRAS_status, CDKN2A_status, survival, survival_months, RIN 
+Clustering completed and results saved to spatialGE_STclustered.rds 
+No traceback available 

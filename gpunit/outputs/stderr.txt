@@ -1,0 +1,11 @@
+Loading required package: ggplot2
+
+Attaching package: ‘zip’
+
+The following objects are masked from ‘package:utils’:
+
+    unzip, zip
+
+Warning message:
+In plot_image(lung_subset) :
+  No tissue images available for the samples in this STlist.
