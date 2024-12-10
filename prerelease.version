@@ -1,6 +1,8 @@
+#prerelease version number
+#Mon, 09 Dec 2024 19:10:27 -0500
 #updated after building 0.2
 #Mon, 09 Dec 2024 19:09:17 -0500
 #updated after building 0.1
 #Mon, 09 Dec 2024 18:47:34 -0500
 #prerelease version number
-prerelease.number=3
+prerelease.number=1
