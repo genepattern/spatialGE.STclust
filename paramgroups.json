@@ -4,9 +4,9 @@
         "description": "Essential parameters for running the spatial clustering analysis.",
         "hidden": false,
         "parameters": [
-            "stlist",
-            "output",
-            "image.paths"
+            "input.file",
+            "output.file",
+            "tissue.images"
         ]
     },
     {
@@ -14,13 +14,14 @@
         "description": "Optional parameters for customizing the analysis.",
         "hidden": false,
         "parameters": [
-            "ws",
-            "dist_metric",
-            "linkage",
-            "ks",
-            "topgenes",
-            "deepSplit",
-            "plot"
+            "spatial.weight",
+            "distance.metric",
+            "linkage.method",
+            "dynamic.tree.cut",
+            "minimum.clusters",
+            "maximum.clusters",
+            "number.of.genes",
+            "deep.split"
         ]
     }
 ]
