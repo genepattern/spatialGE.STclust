@@ -111,7 +111,7 @@ dom_p <- STplot(lung_subset, ks=ks, ws=0.02, deepSplit=F, color_pal='smoothrainb
 # Save the plots to disk
 for (i in seq_along(ti)) {
   file_name <- paste0("image_", i, ".jpg")
-  ggsave(file_name, plot=ti[i])
+  ggsave(file_name, plot=ti[[i]])
 }
 
 for (i in names(dom_p)) {
